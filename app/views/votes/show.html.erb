@@ -1,5 +1,9 @@
 <%= @vote.name %>
-<p></p>
 <% @vote.questions.each do |question| %>
+    <p></p>
     <%= question.text %>
+    <% question.answers.each do |answer| %>
+        <p></p>
+        <%= answer.text %>
+    <% end %>
 <% end %>
