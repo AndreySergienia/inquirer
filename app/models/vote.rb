@@ -5,4 +5,8 @@ class Vote < ActiveRecord::Base
                                 :allow_destroy => true
   belongs_to :user
   validates :name, presence: true
+
+  def total_points
+    questions.flat_map(&:correct_answers).count
+  end
 end

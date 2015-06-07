@@ -3,4 +3,8 @@ class Question < ActiveRecord::Base
   accepts_nested_attributes_for :answers, :reject_if => :all_blank, :allow_destroy => true, :limit => 4
   belongs_to :vote
   validates :text, presence: true
+
+  def correct_answers
+    return answers.correct
+  end
 end
