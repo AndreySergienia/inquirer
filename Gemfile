@@ -27,6 +27,7 @@ gem 'jquery-turbolinks'
 gem 'cocoon'
 
 gem 'devise'
+gem 'cancan'
 
 
 
