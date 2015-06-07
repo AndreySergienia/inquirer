@@ -4201,3 +4201,233 @@ Processing by VotesController#index as HTML
   Rendered votes/index.html.erb within layouts/application (1.5ms)
   Rendered shared/_header.html.erb (0.4ms)
 Completed 200 OK in 73ms (Views: 71.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/votes/4/edit" for 127.0.0.1 at 2015-06-07 17:39:02 +0300
+Processing by VotesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT  "votes".* FROM "votes" WHERE "votes"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_errors.html.erb (0.1ms)
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."vote_id" = ?  [["vote_id", 4]]
+  Rendered votes/_question_fields.html.erb (1.4ms)
+  Rendered votes/_question_fields.html.erb (1.4ms)
+  Rendered votes/_question_fields.html.erb (1.4ms)
+  Rendered votes/_question_fields.html.erb (1.0ms)
+  Rendered votes/_form.html.erb (19.1ms)
+  Rendered votes/edit.html.erb within layouts/application (21.5ms)
+  Rendered shared/_header.html.erb (0.7ms)
+Completed 200 OK in 111ms (Views: 108.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 17:39:03 +0300
+Processing by VotesController#index as HTML
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT "votes".* FROM "votes"[0m
+  Rendered votes/index.html.erb within layouts/application (2.2ms)
+  Rendered shared/_header.html.erb (0.4ms)
+Completed 200 OK in 105ms (Views: 104.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/votes/new" for 127.0.0.1 at 2015-06-07 17:39:04 +0300
+Processing by VotesController#new as HTML
+  Rendered shared/_errors.html.erb (0.1ms)
+  Rendered votes/_question_fields.html.erb (1.0ms)
+  Rendered votes/_form.html.erb (6.2ms)
+  Rendered votes/new.html.erb within layouts/application (7.2ms)
+  Rendered shared/_header.html.erb (0.4ms)
+Completed 200 OK in 79ms (Views: 78.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 17:39:09 +0300
+Processing by VotesController#index as HTML
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes"
+  Rendered votes/index.html.erb within layouts/application (2.0ms)
+  Rendered shared/_header.html.erb (0.4ms)
+Completed 200 OK in 87ms (Views: 85.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/votes/4/edit" for 127.0.0.1 at 2015-06-07 17:39:10 +0300
+Processing by VotesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT  "votes".* FROM "votes" WHERE "votes"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_errors.html.erb (0.1ms)
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."vote_id" = ?  [["vote_id", 4]]
+  Rendered votes/_question_fields.html.erb (1.1ms)
+  Rendered votes/_question_fields.html.erb (1.3ms)
+  Rendered votes/_question_fields.html.erb (1.1ms)
+  Rendered votes/_question_fields.html.erb (0.7ms)
+  Rendered votes/_form.html.erb (15.8ms)
+  Rendered votes/edit.html.erb within layouts/application (16.9ms)
+  Rendered shared/_header.html.erb (0.4ms)
+Completed 200 OK in 92ms (Views: 89.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/votes/4/edit" for 127.0.0.1 at 2015-06-07 17:39:48 +0300
+Processing by VotesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT  "votes".* FROM "votes" WHERE "votes"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_errors.html.erb (0.1ms)
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."vote_id" = ?  [["vote_id", 4]]
+  Rendered votes/_question_fields.html.erb (3.0ms)
+  Rendered votes/_question_fields.html.erb (1.0ms)
+  Rendered votes/_question_fields.html.erb (0.7ms)
+  Rendered votes/_question_fields.html.erb (1.6ms)
+  Rendered votes/_form.html.erb (17.0ms)
+  Rendered votes/edit.html.erb within layouts/application (17.8ms)
+  Rendered shared/_header.html.erb (0.5ms)
+Completed 200 OK in 88ms (Views: 85.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/votes.self-c523c7d822ce798dd961e8a5e63b5bf2c058c57a3a236e4e3c10eb8f6e005288.css?body=1" for 127.0.0.1 at 2015-06-07 17:39:48 +0300
+
+
+Started GET "/assets/application.self-1ebfed371af79356df45b38f3a262ee7781a9a4b9301724d26b44e6c0d90762b.css?body=1" for 127.0.0.1 at 2015-06-07 17:39:48 +0300
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for 127.0.0.1 at 2015-06-07 17:39:48 +0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-07 17:39:48 +0300
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-06-07 17:39:48 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-07 17:39:48 +0300
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2015-06-07 17:39:48 +0300
+
+
+Started GET "/assets/votes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-07 17:39:48 +0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-06-07 17:39:48 +0300
+
+
+Started PATCH "/votes/4" for 127.0.0.1 at 2015-06-07 17:39:56 +0300
+Processing by VotesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jcaij9keTzwonwloyWm1VQ/iui/mwfrobvkF+sgLIRDYy1XjsdQkzL4vpmVz1Bc7k0Lv6xdz6ICQAbZ+uWDINw==", "vote"=>{"name"=>"Test", "questions_attributes"=>{"0"=>{"text"=>"First question", "_destroy"=>"false", "id"=>"1"}, "1"=>{"text"=>"Second question", "_destroy"=>"false", "id"=>"2"}, "2"=>{"text"=>"Third question", "_destroy"=>"false", "id"=>"3"}}}, "commit"=>"Save changes", "id"=>"4"}
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT  "votes".* FROM "votes" WHERE "votes"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."vote_id" = ? AND "questions"."id" IN (1, 2, 3)[0m  [["vote_id", 4]]
+  [1m[35m (0.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 17:39:57 +0300
+Processing by VotesController#index as HTML
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT "votes".* FROM "votes"[0m
+  Rendered votes/index.html.erb within layouts/application (1.4ms)
+  Rendered shared/_header.html.erb (0.4ms)
+Completed 200 OK in 84ms (Views: 83.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/votes/4/edit" for 127.0.0.1 at 2015-06-07 17:39:58 +0300
+Processing by VotesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mVote Load (0.1ms)[0m  SELECT  "votes".* FROM "votes" WHERE "votes"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered shared/_errors.html.erb (0.1ms)
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."vote_id" = ?[0m  [["vote_id", 4]]
+  Rendered votes/_question_fields.html.erb (1.5ms)
+  Rendered votes/_question_fields.html.erb (0.8ms)
+  Rendered votes/_question_fields.html.erb (1.2ms)
+  Rendered votes/_question_fields.html.erb (1.3ms)
+  Rendered votes/_form.html.erb (15.1ms)
+  Rendered votes/edit.html.erb within layouts/application (16.0ms)
+  Rendered shared/_header.html.erb (0.4ms)
+Completed 200 OK in 95ms (Views: 93.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 17:40:10 +0300
+Processing by VotesController#index as HTML
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes"
+  Rendered votes/index.html.erb within layouts/application (2.4ms)
+  Rendered shared/_header.html.erb (0.4ms)
+Completed 200 OK in 87ms (Views: 85.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 17:42:42 +0300
+Processing by VotesController#index as HTML
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT "votes".* FROM "votes"[0m
+  Rendered votes/index.html.erb within layouts/application (2.3ms)
+  Rendered shared/_header.html.erb (0.4ms)
+Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/votes.self-c523c7d822ce798dd961e8a5e63b5bf2c058c57a3a236e4e3c10eb8f6e005288.css?body=1" for 127.0.0.1 at 2015-06-07 17:42:43 +0300
+
+
+Started GET "/assets/application.self-1ebfed371af79356df45b38f3a262ee7781a9a4b9301724d26b44e6c0d90762b.css?body=1" for 127.0.0.1 at 2015-06-07 17:42:43 +0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-06-07 17:42:43 +0300
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-06-07 17:42:43 +0300
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for 127.0.0.1 at 2015-06-07 17:42:43 +0300
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2015-06-07 17:42:43 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-07 17:42:43 +0300
+
+
+Started GET "/assets/votes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-07 17:42:43 +0300
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-06-07 17:42:43 +0300
+
+
+Started GET "/votes/4/edit" for 127.0.0.1 at 2015-06-07 17:42:43 +0300
+Processing by VotesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mVote Load (0.2ms)[0m  SELECT  "votes".* FROM "votes" WHERE "votes"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered shared/_errors.html.erb (0.1ms)
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."vote_id" = ?[0m  [["vote_id", 4]]
+  Rendered votes/_question_fields.html.erb (2.3ms)
+  Rendered votes/_question_fields.html.erb (1.3ms)
+  Rendered votes/_question_fields.html.erb (1.1ms)
+  Rendered votes/_question_fields.html.erb (2.0ms)
+  Rendered votes/_form.html.erb (19.3ms)
+  Rendered votes/edit.html.erb within layouts/application (20.6ms)
+  Rendered shared/_header.html.erb (0.6ms)
+Completed 200 OK in 101ms (Views: 98.8ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/votes/4" for 127.0.0.1 at 2015-06-07 17:43:30 +0300
+Processing by VotesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+4bBnEbHTySa005R55S2ZTLOegtJkPqmBw4WPsQ+Ws0GizbwLg0k1Axj4VxdKRQLrm4vz7gi6M759qW6tVWz6g==", "vote"=>{"name"=>"Test", "questions_attributes"=>{"0"=>{"text"=>"First question", "_destroy"=>"false", "id"=>"1"}, "1"=>{"text"=>"Second question", "_destroy"=>"false", "id"=>"2"}, "2"=>{"text"=>"Third question", "_destroy"=>"false", "id"=>"3"}, "1433688172489"=>{"text"=>"", "_destroy"=>"false"}}}, "commit"=>"Save changes", "id"=>"4"}
+  [1m[35mVote Load (0.1ms)[0m  SELECT  "votes".* FROM "votes" WHERE "votes"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."vote_id" = ? AND "questions"."id" IN (1, 2, 3)  [["vote_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-07 17:43:30 +0300
+Processing by VotesController#index as HTML
+  [1m[35mVote Load (0.2ms)[0m  SELECT "votes".* FROM "votes"
+  Rendered votes/index.html.erb within layouts/application (1.6ms)
+  Rendered shared/_header.html.erb (0.4ms)
+Completed 200 OK in 69ms (Views: 68.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/votes/4/edit" for 127.0.0.1 at 2015-06-07 17:43:32 +0300
+Processing by VotesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mVote Load (0.2ms)[0m  [1mSELECT  "votes".* FROM "votes" WHERE "votes"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered shared/_errors.html.erb (0.1ms)
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."vote_id" = ?  [["vote_id", 4]]
+  Rendered votes/_question_fields.html.erb (1.2ms)
+  Rendered votes/_question_fields.html.erb (0.8ms)
+  Rendered votes/_question_fields.html.erb (0.9ms)
+  Rendered votes/_question_fields.html.erb (1.3ms)
+  Rendered votes/_form.html.erb (15.7ms)
+  Rendered votes/edit.html.erb within layouts/application (17.1ms)
+  Rendered shared/_header.html.erb (0.5ms)
+Completed 200 OK in 111ms (Views: 108.0ms | ActiveRecord: 0.4ms)
