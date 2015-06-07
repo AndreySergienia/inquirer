@@ -1,9 +1,1 @@
-<%= @vote.name %>
-<% @vote.questions.each do |question| %>
-    <p></p>
-    <%= question.text %>
-    <% question.answers.each do |answer| %>
-        <p></p>
-        <%= answer.text %>
-    <% end %>
-<% end %>
+<%= render "pass_form" %>

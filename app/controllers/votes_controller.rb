@@ -6,6 +6,9 @@ class VotesController < ApplicationController
 
   def show
     @vote = Vote.find_by(id: params[:id])
+    @vote.questions.flat_map(&:answers).each do |answer|
+      answer.correct = false
+    end
   end
 
   def new
@@ -45,6 +48,13 @@ class VotesController < ApplicationController
     else
       render 'edit'
     end
+  end
+
+  def check_result
+    result = CalculateResults.calculate(vote_params)
+    flash[:success] = "Vote passed! #{result}"
+
+    redirect_to root_path
   end
 
   private
