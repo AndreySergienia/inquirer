@@ -5,5 +5,14 @@
       <%= form.label :name %>
       <%= form.text_field :name %>
     </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">Questions</div>
+      <%= form.fields_for :questions do |question_form| %>
+          <%= render "question_fields", f: question_form %>
+      <% end %>
+      <div class="panel-footer">
+        <%= link_to_add_association "Add question", form, :questions %>
+      </div>
+    </div>
     <%= form.submit action, class: "btn btn-primary" %>
 <% end %>
