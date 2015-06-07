@@ -1,7 +1,9 @@
+<div class="btn-group">
+  <%= link_to "Create new vote", new_vote_path, class: "btn btn-default" %>
+</div>
+<p></p>
 <% @votes.each do |vote| %>
-    <div class="well">
-      <h4><%= link_to "#{vote.name}", vote_path(vote) %></h4>
-    </div>
-    <div class="btn-group">
-    </div>
+  <div class="well">
+    <h4><%= link_to "#{vote.name}", vote_path(vote) %></h4>
+  </div>
 <% end %>

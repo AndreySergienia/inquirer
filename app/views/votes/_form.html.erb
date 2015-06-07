@@ -1,0 +1,9 @@
+<%= form_for @vote do |form| %>
+    <%= render "shared/errors", object: @vote %>
+
+    <div class="form-group">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+    <%= form.submit "Create", class: "btn btn-primary" %>
+<% end %>
