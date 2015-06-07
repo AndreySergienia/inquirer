@@ -47,6 +47,7 @@ class VotesController < ApplicationController
 
   private
     def vote_params
-      params.require(:vote).permit(:name, questions_attributes: [:id, :text, :_destroy])
+      params.require(:vote).permit(:name, questions_attributes: [:id, :text, :_destroy,
+                                            answers_attributes: [:id, :text, :correct, :_destroy]])
     end
 end

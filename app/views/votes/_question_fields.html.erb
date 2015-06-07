@@ -3,5 +3,11 @@
     <%= f.label :text %>
     <%= f.text_area :text, class: "form-comtrol" %>
     <%= link_to_remove_association "Remove question", f %>
+    <%= f.fields_for :answers do |answer_form| %>
+        <%= render "answer_fields", f: answer_form %>
+    <% end %>
+    <div class="panel-footer">
+      <%= link_to_add_association "Add answer", f, :answers %>
+    </div>
   </div>
 </div>
