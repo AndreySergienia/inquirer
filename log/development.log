@@ -4472,3 +4472,11 @@ Migrating to CreateAnswers (20150607145301)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 
+  [1m[36mVote Load (0.3ms)[0m  [1mSELECT  "votes".* FROM "votes"  ORDER BY "votes"."id" ASC LIMIT 1[0m
+  [1m[35mVote Load (0.5ms)[0m  SELECT  "votes".* FROM "votes"  ORDER BY "votes"."id" ASC LIMIT 1
+  [1m[36mQuestion Load (0.5ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."vote_id" = ?[0m  [["vote_id", 4]]
+  [1m[35mVote Load (0.4ms)[0m  SELECT  "votes".* FROM "votes"  ORDER BY "votes"."id" ASC LIMIT 1
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."vote_id" = ?  ORDER BY "questions"."id" ASC LIMIT 1[0m  [["vote_id", 4]]
+  [1m[35mVote Load (0.4ms)[0m  SELECT  "votes".* FROM "votes"  ORDER BY "votes"."id" ASC LIMIT 1
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."vote_id" = ?  ORDER BY "questions"."id" ASC LIMIT 1[0m  [["vote_id", 4]]
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  [["question_id", 1]]
