@@ -15,6 +15,7 @@ class VotesController < ApplicationController
   def create
     @vote = Vote.new(vote_params)
     if @vote.save
+      @vote.update(user: current_user)
       flash[:success] = "Vote successfully created!"
       redirect_to root_path
     else

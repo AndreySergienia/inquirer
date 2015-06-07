@@ -3,9 +3,12 @@
     <div class="container">
       <%= link_to "Simple Inquirer", root_path, class: "navbar-brand"%>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Sign up", new_user_registration_path %></li>
-        <li><%= link_to "Sign in", new_user_session_path %></li>
-        <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+        <% unless current_user %>
+            <li><%= link_to "Sign up", new_user_registration_path %></li>
+            <li><%= link_to "Sign in", new_user_session_path %></li>
+        <% else %>
+            <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+        <% end %>
       </ul>
     </div>
   </div>

@@ -4,6 +4,12 @@ class Ability
   def initialize(user)
     user ||= User.new
     can :read, :all
+    can :update, Vote do |vote|
+      vote.try(:user) == user
+    end
+    unless user.new_record?
+      can :create, Vote
+    end
     # Define abilities for the passed in user here. For example:
     #
     #   user ||= User.new # guest user (not logged in)
